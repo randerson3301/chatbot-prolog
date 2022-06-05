@@ -1,0 +1,33 @@
+%PROJETO INTEGRADOR DE COMPETÊNCIAS(PIC)
+%Projeto: Chatbot desenvolvido com Prolog especializado em questões de redes de computadores
+%Autor: Randerson Mendes
+
+include("base_dados_I").
+include("base_dados_II"). 
+
+%-------------REGRAS DE CONSULTA--------------------
+consulta(P, R) :-		
+	entrada(P, RespostaId), 
+	resposta(RespostaId, R).
+
+respostaChatbot(R) :-
+	resposta(RespostaId, R),
+	write(R), nl,
+	%se a respostaId for diferente de fim, o chatbot será chamado novamente
+	RespostaId > 0 -> askChatbot().
+
+
+consultaEntradasDisponiveis() :- 
+	entrada(P, _),
+	write(P), nl.
+	
+
+askChatbot() :- 
+	read(Pergunta, "O que você quer saber sobre redes de computadores? *Digite 'fim' para encerrar*", s), nl,
+	write(Pergunta), write(" : "), nl,
+	consulta(Pergunta, Resposta) -> respostaChatbot(Resposta) ;
+	%caso o input lido pelo chatbot não seja reconhecido, ele apresentará as perguntas disponiveis ao usuário	
+	write("\nInfelizmente não encontrei a resposta! Por favor, verifique as entradas disponíveis. "), nl, nl,
+	consultaEntradasDisponiveis().
+
+?- write("Bem-vindo :D !! Sou um chatbot especialista em redes de computadores, pergunte o que quiser! \n"), nl, askChatbot(). 

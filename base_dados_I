@@ -1,0 +1,182 @@
+%base de dados 1
+
+%----------ENTRADAS----------------
+%entrada(entrada = string, respostaId = integer)
+
+entrada("O que é uma rede de computadores?", 1).
+entrada("rede de computadores", 1).
+entrada("O que são redes de computadores?", 1).
+
+entrada("Quais são as classificações de redes?", 2).
+entrada("classificação de redes", 2).
+entrada("Como as redes são classificadas?", 2).
+entrada("Exemplos de classificação de redes", 2).
+
+entrada("O que é um roteador?", 3).
+entrada("roteador", 3).
+entrada("Como o roteador funciona?", 3).
+
+entrada("O que é uma placa de rede?", 4).
+entrada("placa de rede", 4).
+
+entrada("O que é um modem?", 5).
+entrada("modem", 5).
+entrada("Como o modem funciona?", 5).
+
+entrada("O que é um repetidor?", 6).
+entrada("repetidor", 6).
+entrada("Como o repetidor funciona?", 6).
+
+entrada("O que é um switch?", 7).
+entrada("switch", 7).
+entrada("Como o switch funciona?", 7).
+
+entrada("O que é uma LAN?", 8).
+entrada("LAN", 8).
+entrada("Como a LAN funciona?", 8).
+
+entrada("O que é uma MAN?", 9).
+entrada("MAN", 9).
+entrada("Como a MAN funciona?", 9).
+
+entrada("O que é uma WAN?", 10).
+entrada("WAN", 10).
+entrada("Como a WAN funciona?", 10).
+
+entrada("O que é a internet?", 11).
+entrada("internet", 11).
+entrada("Como a internet funciona?", 11).
+
+entrada("O que é o correio eletrônico?", 12).
+entrada("correio eletrônico", 12).
+entrada("Como o correio eletrônico funciona?", 12).
+
+entrada("O que é um cabo coaxial?", 13).
+entrada("cabo coaxial", 13).
+
+entrada("O que é um cabo de par trançado?", 14).
+entrada("cabo de par trançado", 14).
+
+entrada("O que é a fibra óptica?", 15).
+entrada("fibra óptica", 15).
+
+entrada("O que é radiofrequência?", 16).
+entrada("radiofrequência", 16).
+entrada("Como a radiofrequência funciona?", 16).
+
+entrada("O que são topologias de redes?", 17).
+entrada("topologias de redes", 17).
+entrada("topologia de rede", 17).
+
+entrada("O que é uma topologia parcialmente ligada?", 18).
+entrada("topologia parcialmente ligada", 18).
+
+entrada("O que é uma topologia em barramento?", 19).
+entrada("topologia em barramento", 19).
+
+entrada("O que é uma topologia ponto a ponto?", 20).
+entrada("topologia ponto a ponto", 20).
+
+entrada("O que é uma topologia multiponto?", 21).
+entrada("topologia multiponto", 21).
+entrada("token ring", 21).
+
+entrada("O que é uma topologia em estrela?", 22).
+entrada("topologia em estrela", 22).
+
+
+%----------RESPOSTAS----------------
+
+%resposta(respostaId: integer, resposta: string).
+
+resposta(1, "	Rede de computadores é um conjunto de dois ou mais
+dispositivos computacionais (ou módulos processadores ou nós da rede) 
+interligados por um sistema de comunicação digital, 
+guiados por um conjunto de regras (protocolo de rede) 
+para compartilhar entre si informação, serviços e, 
+recursos físicos e lógicos.\n").
+
+resposta(2, 
+"LAN = Redes de alcance local, restrita a um espaço pequeno, 
+como redes empresariais, domésticas e etc.
+MAN = Redes de alcance metropolitano, restrita a um espaço maior que as locais que 
+corresponda a uma metrópole.
+WAN = Redes de alcance global, sem restrições de espaço, conectam países e continentes.\n").
+
+resposta(3, "	Elemento utilizado para encaminhar pacotes de informações ao destino
+adequado. Para tanto, os roteadores abrem os pacotes IP e analisam cada endereço
+de destino, verificando a melhor rota para enviar o pacote ao destino final.\n").
+
+resposta(4, "	Elemento empregado como interface entre o computador e o cabeamento da
+rede, conhecido também como adaptador. Possui um processador especializado
+em rotinas de armazenamento dentro da memória de leituras para transmitir e
+receber dados.").
+
+resposta(5, "	Elemento utilizado para modular o sinal digital para que possa ser transmitido.
+Ou seja, transforma os sinais elétricos digitais, que saem do computador, em
+um formato adequado ao meio de transmissão para que, através da aplicação
+de técnicas que permitam a preservação da integridade dos sinais, possam ser
+transmitidos para longas distâncias por meio da linha telefônica.").
+
+resposta(6, "	Elemento empregado para a interligação de duas ou mais redes idênticas,
+transformando-as em uma única rede lógica.").
+
+resposta(7, "	Elemento utilizado para interligar computadores e redes a fim de concentrar o
+cabeamento e permitir a conexão de redes de tipos diferentes.").
+
+resposta(8, "	Corresponde às redes locais de empresas,
+escritórios, laboratórios de informática ou até domésticas. Em síntese, é restrita
+a uma pequena área").
+
+resposta(9, "	Diz respeito às redes que têm alcance
+metropolitano. Ou seja, uma rede que interconecta recursos computacionais
+em uma área referente a uma metrópole;").
+
+resposta(10, "	 É uma rede que interconecta recursos computacionais 
+distantes geograficamente uns dos outros.").
+
+resposta(11, " É uma gigantesca rede mundial de computadores,
+os quais interligados por linhas comuns de telefone, linhas privadas de comunicação,
+cabos submarinos, canais de satélite e inúmeros outros meios de telecomunicação.").
+
+resposta(12, "	 É um dos primeiros serviços disponíveis para a comunicação em rede. O correio
+eletrônico permite que usuários enviem e recebam mensagens eletrônicas, usando
+um endereço eletrônico como referência para a localização dos destinatários da
+mensagem.").
+
+resposta(13, "	 Cabo coaxial é uma espécie de cabo condutor usado para a transmissão de sinais. 
+Ele recebe tal nome por ser constituído de várias camadas concêntricas de condutores e isolantes.").
+
+resposta(14, " O cabo de par trançado é o mais usado em redes. Além da flexibilidade, garante
+uma velocidade na troca das informações compatível com as interfaces de redes.
+Geralmente, é utilizado em redes locais.").
+
+resposta(15, " A fibra óptica tem capacidade de transmitir grande volume de informações. Tal
+característica a torna um meio interessante para ser implementada em locais com
+essas possibilidades").
+
+resposta(16, " A radiofrequência é o meio não físico utilizado para transmitir informações.
+A este tipo de meio convencionou-se chamar de wireless e as tecnologias mais
+conhecidas que desse se utilizam são o telefone celular, wi-fi, wimax, satélite,
+infravermelho e bluetooth").
+
+resposta(17, " A topologia, em redes de computadores, está relacionada à forma como as
+interfaces são conectadas umas às outras. Essa característica define o seu tipo, a
+eficiência da rede e sua velocidade").
+
+resposta(18, "	Neste tipo de tecnologia, os computadores são interligados de forma intermediária, 
+ou seja, não são todos os computadores que são interligados").
+
+resposta(19, " Este tipo de topologia consiste em ter um meio de comunicação comum, ou seja,
+todos os computadores são conectados a esse meio para estabelecer comunicação
+entre si").
+
+resposta(20, " Este tipo de topologia caracteriza-se por enviar os dados apenas em um sentido
+como, por exemplo, sentido anti-horário.").
+
+resposta(21, " Este tipo de topologia é também conhecido como token ring. Caracteriza-se por
+circular no anel, um conjunto padrão de oito bits, chamado de token.").
+
+resposta(22, " Caracteriza-se por ter um ponto central para interligar os computadores a fim de
+estabelecer comunicações. O ponto central age como centro de controle da rede,
+interligando todas as máquinas.").

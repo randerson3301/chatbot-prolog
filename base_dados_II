@@ -1,0 +1,161 @@
+%base de dados 2
+
+%----------ENTRADAS----------------
+%entrada(entrada = string, respostaId = integer)
+
+entrada("O que é Ethernet?", 23).
+entrada("ethernet", 23).
+entrada("Como funciona a Ethernet?", 23).
+
+entrada("O que é endereçamento na ethernet e quais são os seus serviços", 24).
+entrada("endereçamento na ethernet", 24).
+entrada("serviços de endereçamento na ethernet", 24).
+
+entrada("O que é um Protocolo MAC?", 25).
+entrada("protocolo MAC", 25).
+entrada("Como funciona o protocolo MAC?", 25).
+
+
+entrada("O que é Padrão Gigabit Ethernet?", 26).
+entrada("padrão gigabit ethernet", 26).
+entrada("Como funciona o padrão gigabit ethernet?", 26).
+
+
+entrada("O que é Metro Ethernet?", 27).
+entrada("metro ethernet", 27).
+entrada("Como funciona a metro ethernet?", 27).
+
+entrada("O que é o protocolo TCP/IP?", 28).
+entrada("TCP/IP", 28).
+entrada("Como funciona o TCP/IP?", 28).
+
+entrada("Quais são os protocolos que constituem o TCP?", 29).
+entrada("protocolos TCP", 29).
+
+
+entrada("O que é IGRP?", 30).
+entrada("IGRP", 30).
+entrada("Como funciona o IGRP?", 30).
+
+entrada("O que é EIGRP?", 31).
+entrada("EIGRP", 31).
+entrada("Como funciona o EIGRP?", 31).
+
+entrada("O que é SMTP?", 32).
+entrada("SMTP", 32).
+entrada("Como funciona o SMTP?", 32).
+
+entrada("O que é Telnet?", 33).
+entrada("telnet", 33).
+entrada("Como funciona o Telnet?", 33).
+
+entrada("O que é FTP?", 34).
+entrada("FTP", 34).
+entrada("Como funciona o FTP?", 34).
+
+entrada("O que é HTTP?", 35).
+entrada("HTTP", 35).
+entrada("Como funciona o HTTP?", 35).
+
+entrada("O que é camada de rede?", 36).
+entrada("camada de rede", 36).
+entrada("Como funcionam as camada de rede?", 36).
+
+entrada("O que é IPv4?", 37).
+entrada("IPv4", 37).
+entrada("Como funciona o IPv4?", 37).
+
+entrada("O que é ICMP?", 38).
+entrada("ICMP", 38).
+entrada("Como funciona o ICMP?", 38).
+
+entrada("fim", 0).
+
+entrada("", -1) :- askChatbot().
+
+
+%----------RESPOSTAS----------------
+
+%resposta(respostaId: integer, resposta: string).
+
+resposta(0, "Tchau! Até a próxima :)").
+
+resposta(23, "		A ethernet constitui um conjunto de protocolos e técnicas para tornar viável
+a comunicação entre os computadores. É usada na grande maioria das redes de
+computadores LAN instaladas pelo mundo.\n").
+
+resposta(24, "		Em um nível de abstração mais alto, pode-se dizer que a tecnologia ethernet
+oferece a comunicação entre equipamentos de uma mesma rede física sem o uso
+de conexões e com serviços:\n
+1- Unicast, ou seja, um quadro ethernet vai para um destino único;\n
+2- Multicast, em que um quadro vai para múltiplos destinos;\n
+3- Broadcast, em que um quadro vai para todos os destinos.").
+
+resposta(25, "		Conceitualmente, uma rede ethernet simples consiste de um barramento único
+que todas as máquinas querem acessar para realizar suas transmissões de dados.
+Como esse meio é único e compartilhado, apenas uma estação pode transmitir em
+um determinado período de tempo, portanto, a comunicação é considerada halfduplex. Considerando essa característica, deve haver uma forma de organizar o
+acesso ao meio, de modo que cada estação possa, eventualmente, transmitir um
+quadro de cada vez. O protocolo que realiza esse controle chama-se Media Access
+Control (MAC).").
+
+resposta(26, " 	Ao longo do tempo, surgiram aplicações “sedentas” por largura de banda; a
+integração de sistemas computacionais mais rápidos e a migração da fast ethernet
+dos backbones para a LAN criar am “gargalos” para o servidor e para as conexões
+comutadas. O gigabit ethernet alivia esse congestionamento, tornando-se uma
+tecnologia mais rápida para o backbone.").
+
+resposta(27, "		Metro ethernet é uma tecnologia que permite utilizar redes ethernet em áreas
+metropolitanas e geograficamente distribuídas").
+
+resposta(28, "		O TCP/IP (também chamado de pilha de protocolos TCP/IP) 
+é um conjunto de protocolos de comunicação entre computadores em rede. 
+Seu nome vem de dois protocolos: 
+o TCP (Transmission Control Protocol - Protocolo de Controle de Transmissão) 
+e o IP (Internet Protocol - Protocolo de Internet, ou ainda, protocolo de interconexão).").
+
+resposta(29, "		FTP, Telnet, Finger, SMTP, POP").
+
+resposta(30, "		Protocolo Interno de Distribuição (do inglês Inter-Gateway Routing Protocol - IGRP, 
+ou Internal Gateway Protocol - IGP) é um protocolo de distribuição de dados (roteamento) 
+do gateway dentro de uma complexa rede de computadores com várias rotas paralelas, 
+desenvolvido na década de 1980 pela Cisco Systems.").
+
+resposta(31, "		O EIGRP (Enhanced Interior Gateway Routing Protocol)
+ é um protocolo avançado de roteamento por vetor da distância, 
+desenvolvido primeiramente como um protocolo proprietário da Cisco. 
+Funcionalidades básicas do EIGRP foram convertidas para padrão aberto em 2013, 
+e foram especificadas na RFC 7868 em 2016.").
+
+resposta(32, "		Protocolo de Transferência de Correio Simples 
+(do inglês: Simple Mail Transfer Protocol, abreviado SMTP) 
+é o protocolo padrão de envio de mensagens de correio eletrônico através da Internet 
+entre dois dispositivos computacionais (emissor e receptor), definido na RFC 821").
+
+resposta(33, "		Telnet é um protocolo de rede na Internet ou redes locais 
+para proporcionar uma facilidade de comunicação baseada em texto interativo bidirecional 
+usando uma conexão de terminal virtual.").
+
+resposta(34, "		Protocolo de Transferência de Arquivos (do inglês: File Transfer Protocol, 
+abreviado FTP) é um protocolo padrão/genérico independente de hardware 
+sobre um modo de transferir arquivos.").
+
+resposta(35, "		O Hypertext Transfer Protocol, sigla HTTP (em português Protocolo de Transferência de Hipertexto) 
+é um protocolo de comunicação (na camada de aplicação segundo o Modelo OSI) 
+utilizado para sistemas de informação de hipermídia, distribuídos e colaborativos. 
+Ele é a base para a comunicação de dados da World Wide Web.").
+
+resposta(36, "		A camada de rede tem como principal função encaminhar os pacotes pela
+rede, o que significa dizer que é nessa camada que os pacotes são abertos pelos
+roteadores para decidir se serão encaminhados para a rede LAN ou, então, se
+serão novamente empacotados para serem retransmitidos pela rede").
+
+resposta(37, "		A primeira padronização do endereçamento IP, disponibilizada em setembro
+de 1981, especificava que qualquer interface interconectada à internet precisaria
+ser identificada usando os 32 bits disponíveis para endereço IP.").
+
+resposta(38, "		ICMP, sigla para o inglês Internet Control Message Protocol 
+(em português, Protocolo de Mensagens de Controle da Internet), 
+é um protocolo integrante do Protocolo IP, definido pelo RFC 792, 
+é utilizado para comunicar informações da camada de rede, sendo o uso mais comum para 
+fornecer relatórios de erros à fonte original.").
